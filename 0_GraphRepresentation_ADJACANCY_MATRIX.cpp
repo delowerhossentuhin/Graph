@@ -2,12 +2,12 @@
 using namespace std;
 int main()
 {
-    ////////sublime text////////
+    /*
     #ifndef ONLINE_JUDGE
     freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
     #endif
-    ////////////////////////////
+    */
 
     int n=5,m=6;
     int adj[6][6];
