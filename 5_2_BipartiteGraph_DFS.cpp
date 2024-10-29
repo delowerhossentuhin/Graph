@@ -34,10 +34,12 @@ bool isBipartite(int nodes,vector<int>adj[],vector<int>&visited)
 }
 int main()
 {
+    /*
     #ifndef ONLINE_JUDGE
     freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
     #endif
+    */
 
     int nodes, edges;
     cin>>nodes>>edges;
