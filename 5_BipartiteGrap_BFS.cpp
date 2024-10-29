@@ -38,10 +38,12 @@ bool isBipartiteGraph(int node,vector<int>adj[],vector<int>&visited)
 }
 int main()
 {
+    /*
     #ifndef ONLINE_JUDGE
     freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
     #endif
+    */
     int node,edge;
     cin>>node>>edge;
     vector<int>adj[node+1];
