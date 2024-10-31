@@ -36,10 +36,12 @@ bool detectCycle(int start, vector<int>adj[],vector<int>&visited,vector<int>&pat
 }
 int main()
 {
+    /*
     #ifndef ONLINE_JUDGE
     freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
     #endif
+    */
 
     int nodes,edges;
     cin>>nodes>>edges;
