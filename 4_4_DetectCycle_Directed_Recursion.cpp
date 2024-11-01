@@ -23,10 +23,12 @@ bool isCycle(int node,vector<int>adj[],vector<int>&visited,vector<int>&pathvisit
 }
 int main()
 {
+    /*
     #ifndef ONLINE_JUDGE
     freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
     #endif
+    */
 
     int nodes,edges;
     cin>>nodes>>edges;
