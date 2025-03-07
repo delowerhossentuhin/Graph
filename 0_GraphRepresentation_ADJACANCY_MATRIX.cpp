@@ -2,18 +2,19 @@
 using namespace std;
 int main()
 {
-    /*
+    
     #ifndef ONLINE_JUDGE
     freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
     #endif
-    */
+    
 
-    int n=5,m=6;
-    int adj[6][6];
-    for(int i=0;i<6;i++)
+    int n,m;
+    cin>>n>>m;
+    int adj[n+1][n+1];
+    for(int i=0;i<n+1;i++)
     {
-        for(int j=0;j<6;j++)
+        for(int j=0;j<n+1;j++)
         {
             adj[i][j]=0;
         }
@@ -23,13 +24,15 @@ int main()
         int u,v;
         cin>>u>>v;
         adj[u][v]=1;
-        adj[v][u]=1;
+        adj[v][u]=1; //this line is only for undirected graph
     }
-    for(int i=0;i<6;i++)
+    for(int i=0;i<n+1;i++)
     {
-        for(int j=0;j<6;j++)
+        for(int j=0;j<n+1;j++)
         {
             cout<<adj[i][j]<<" ";
         }cout<<endl;
     }
 }
+
+
