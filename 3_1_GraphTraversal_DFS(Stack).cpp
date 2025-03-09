@@ -4,7 +4,7 @@
 using namespace std;
 vector<int>dfsOfGraph(int nodes,int start, vector<int>adj[])
 {
-    vector<int>visited(nodes+1,false);
+    vector<int>visited(nodes,false);
     visited[start]=true;
     stack<int>s;
     s.push(start);
@@ -29,12 +29,12 @@ vector<int>dfsOfGraph(int nodes,int start, vector<int>adj[])
 int main()
 {
     ////////File I/O Setup////////
-     /*
+     
     #ifndef ONLINE_JUDGE
     freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
     #endif
-    */
+    
     //////////////////////////////
     int n,m;
     cin>>n>>m;
@@ -44,9 +44,9 @@ int main()
         int u,v;
         cin>>u>>v;
         adj[u].push_back(v);
-        adj[v].push_back(u);
+        //adj[v].push_back(u); //for directed graph
     }
-    vector<int>list=dfsOfGraph(8,6,adj);
+    vector<int>list=dfsOfGraph(6,0,adj);
     for(int it:list)cout<<it<<" ";
 
 }
